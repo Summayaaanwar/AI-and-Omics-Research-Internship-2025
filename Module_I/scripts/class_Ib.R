@@ -1,4 +1,3 @@
-
 # 1. Set Working Directory
 # Create a new folder on your computer "AI_Omics_Internship_2025".
 
@@ -66,6 +65,8 @@ patient_info$smoker_bin <- as.factor(ifelse(patient_info$smoker == "Yes", 1, 0))
 table(patient_info$gender, patient_info$gender_num)
 table(patient_info$diagnosis, patient_info$diagnosis_num)
 table(patient_info$smoker, patient_info$smoker_num)
+
+View(patient_info)
 
 
 # Save the cleaned dataset in your clean_data folder with the name patient_info_clean.csv
